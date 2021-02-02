@@ -5,7 +5,7 @@ const Patients = (props) => {
     <div>
       <div>{props.patient.name}</div>
       <div>
-        <button onClick={() => props.vaccinatedPatients(props.patient.id)}>{!props.patient.vaccinated ? 'vaccinated' : 'get vaccinated'}</button>
+        <button onClick={() => props.vaccinatedPatients(props.patient.id)}>{!props.patient.vaccinated ? 'get vaccinated' : 'vaccinated'}</button>
         <button onClick={() => props.deletePatient(props.patient.id)}>X</button>
       </div>
     </div>
