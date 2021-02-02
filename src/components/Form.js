@@ -19,7 +19,7 @@ handleChange = e => {
     return (
       <div>
         <form>
-          <input value={this.state.patient} type="text" placeholder="Enter patient name"/>
+          <input onChange={e => this.handleChange(e)}     value={this.state.patient} type="text" placeholder="Enter patient name"/>
           <button type="submit">Add Patient</button>
         </form>
       </div>

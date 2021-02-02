@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from "axios"
 import Patients from './Patients';
+import Form from "./Form"
 
 class Main extends Component {
   constructor(props) {
@@ -30,6 +31,7 @@ componentDidMount(){
     })
     return (
       <div>
+        <Form/>
         {mappedPatients}
       </div>
     )
