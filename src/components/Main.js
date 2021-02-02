@@ -34,11 +34,34 @@ componentDidMount(){
 
   }
 
-
+  vaccinatedPatients = id => {
+    axios.put(`/api/patients/${id}`).then(res => {
+      this.setState({
+        patients: res.data
+      })
+    }).catch(err => console.log(err));
+  }
   
+  deletePatient = id => {
+    axios.delete(`/api/patients/${id}`).then(res => {
+      this.setState({
+        patients: res.data
+      })
+    }).catch(err => console.log(err));
+
+  }
+
+
+
   render() {
     const mappedPatients = this.state.patients.map( patient => {
-      return <Patients key={patient.id} patient={patient}   />
+      return <Patients 
+      key={patient.id} 
+      patient={patient}  
+      vaccinatedPatients={this.vaccinatedPatients} 
+      deletePatient={this.deletePatient}
+      
+      />
     })
     return (
       <div>
