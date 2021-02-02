@@ -13,13 +13,19 @@ handleChange = e => {
     name: e.target.value
   })
 }
-
+handleSubmit = e => {
+  e.preventDefault();
+  this.props.addPatients(this.state.name);
+  this.setState({
+    name: ""
+  })
+}
   
   render() {
     return (
       <div>
-        <form>
-          <input onChange={e => this.handleChange(e)}     value={this.state.patient} type="text" placeholder="Enter patient name"/>
+        <form onSubmit={(e) => this.handleSubmit(e)}  >
+          <input onChange={e => this.handleChange(e)}     value={this.state.name} type="text" placeholder="Enter patient name"/>
           <button type="submit">Add Patient</button>
         </form>
       </div>

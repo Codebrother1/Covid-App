@@ -24,6 +24,17 @@ componentDidMount(){
       })
     }).catch(err => console.log(err));
   }
+
+  addPatients = name => {
+    axios.post('/api/patients', {name}).then(res => {
+      this.setState({
+        patients: res.data
+      })
+    }).catch( err => console.log(err))
+
+  }
+
+
   
   render() {
     const mappedPatients = this.state.patients.map( patient => {
@@ -31,7 +42,7 @@ componentDidMount(){
     })
     return (
       <div>
-        <Form/>
+        <Form addPatients={this.addPatients}/>
         {mappedPatients}
       </div>
     )
