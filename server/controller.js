@@ -18,7 +18,17 @@ module.exports = {
   patients.push(newPatient);
   id++;
   res.status(200).send(patients)
-}
+},
+  vaccinatedPatients: (req, res) => {
+  const index = patients.findIndex( patient => patient.id === +req.params.id);
+  patients[index].vaccinated = !patients[index].vaccinated;
+  res.status(200).send(patients);
+},
+  deletePatient: (req, res) => {
+    const index = patients.findIndex( patient => patient.id === +req.params.id);
+    patients.splice(index, 1);
+    res.status(200).send(patients)
+  }
 
  
 }

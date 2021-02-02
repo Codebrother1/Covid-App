@@ -9,6 +9,10 @@ app.get('/api/patients', ctrl.getPatients)
 
 app.post('/api/patients', ctrl.addPatients)
 
+app.put('/api/patients/:id', ctrl.vaccinatedPatients );
+
+app.delete('/api/patients/:id', ctrl.deletePatient)
+
 const port = 4000;
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
