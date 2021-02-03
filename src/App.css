@@ -69,11 +69,10 @@ header > div {
 }
 
 .container {
-  width: 80%;
+  width: 83%;
   height: 50px;
   background-color: #ccc;
   border: 1px solid #ccc;
-  border-radius: 4px;
   margin: 20px;
 }
 
@@ -104,13 +103,23 @@ button {
 .patient {
   width: 80%;
   height: 50px;
-  /* background-color: #0c0f0a; */
   background-color: #ccc;
-  text-align: center;
-  color: white;
-  font-size: 1.3rem;
+  color: black;
+  padding-left: 50px;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+
+footer {
+  position: fixed;
+  height: 10vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
