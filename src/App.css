@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+body {
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  background-color: #0c0f0a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > div {
+  height: 100%;
+  width: 80%;
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.display {
+  width: 80%;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 50px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 20px;
+}
+
+.container > form {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form > input {
+  width: 80%;
+  height: 60%;
+}
+
+button {
+  background-color: #0c0f0a;
+  border: 1px solid;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+.patient {
+  width: 80%;
+  height: 50px;
+  /* background-color: #0c0f0a; */
+  background-color: #ccc;
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}

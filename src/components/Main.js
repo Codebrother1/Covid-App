@@ -68,7 +68,7 @@ componentDidMount(){
       
     })
     return (
-      <div>
+      <div className="display">
         <Form addPatients={this.addPatients}/>
         {mappedPatients}
       </div>

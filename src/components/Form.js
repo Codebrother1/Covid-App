@@ -23,7 +23,7 @@ handleSubmit = e => {
   
   render() {
     return (
-      <div>
+      <div className="container">
         <form onSubmit={(e) => this.handleSubmit(e)}  >
           <input onChange={e => this.handleChange(e)}     value={this.state.name} type="text" placeholder="Enter patient name"/>
           <button type="submit">Add Patient</button>
