@@ -15,4 +15,4 @@ app.delete('/api/patients/:id', ctrl.deletePatient)
 
 const port = 4000;
 
-app.listen(port, () => console.log(`Listening on port ${port}`));
+app.listen(port, () => console.log(`Server is eavesdropping on port ${port}`));

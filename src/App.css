@@ -51,6 +51,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Lato", sans-serif;
 }
 
 header > div {
@@ -60,6 +61,7 @@ header > div {
   font-size: 3rem;
   font-weight: 300;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
 
 .display {
@@ -91,6 +93,7 @@ header > div {
 form > input {
   width: 80%;
   height: 60%;
+  font-family: "Lato", sans-serif;
 }
 
 button {
@@ -102,6 +105,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
+  font-family: "Lato", sans-serif;
 }
 .patient {
   width: 80%;
@@ -114,6 +118,7 @@ button {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
 }
 
 footer {
@@ -125,4 +130,5 @@ footer {
   background-color: black;
   color: white;
   text-align: center;
+  font-family: "Lato", sans-serif;
 }
