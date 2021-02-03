@@ -39,6 +39,9 @@
 body {
   height: 100vh;
   background-color: #f2f2f2;
+  background-image: url("./img/vax3.jpg");
+  background-position: center center;
+  background-size: cover;
 }
 
 header {
@@ -71,8 +74,8 @@ header > div {
 .container {
   width: 83%;
   height: 50px;
-  background-color: #ccc;
-  border: 1px solid #ccc;
+  background-color: #4d4e4f;
+  border: 1px solid #4d4e4f;
   margin: 20px;
 }
 
@@ -103,8 +106,8 @@ button {
 .patient {
   width: 80%;
   height: 50px;
-  background-color: #ccc;
-  color: black;
+  background-color: #4d4e4f;
+  color: #cf352e;
   padding-left: 50px;
   font-size: 2rem;
   display: flex;
