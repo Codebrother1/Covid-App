@@ -3,6 +3,9 @@ import axios from "axios"
 import Patients from './Patients';
 import Form from "./Form"
 
+
+
+
 class Main extends Component {
   constructor(props) {
     super(props)
@@ -30,7 +33,7 @@ componentDidMount(){
       this.setState({
         patients: res.data
       })
-    }).catch( err => console.log(err))
+    }).catch( err => console.log(err));
 
   }
 
@@ -62,6 +65,7 @@ componentDidMount(){
       deletePatient={this.deletePatient}
       
       />
+      
     })
     return (
       <div>
